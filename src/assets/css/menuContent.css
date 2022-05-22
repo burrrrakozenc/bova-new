@@ -1,0 +1,113 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  top: 0.7rem;
+  color: black;
+  /*justify-content: center;*/
+  align-items: center;
+  width: 23px;
+  height: 17px;
+  /*float: right;*/
+}
+
+.header-main ul {
+  list-style: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: lightgrey;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  opacity: 0.8;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  margin: 1rem;
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2em 0 0;
+  font-size: 1.15em;
+  z-index: 9999;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  /*width: 100% !important;*/
+  z-index: 9999;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+}
+
+div.menu-wrapper {
+  margin-left: 15px;
+  height: 40px;
+  width: 40px;
+  background: black;
+  border: gray solid 1px;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 1;
+}
+
+
+div.menu-wrapper .menu-hamburger {
+  z-index: 9999;
+
+  /*margin-right: 1rem!important;*/
+}
+/*div.bm-burger-button > button#react-burger-menu-btn:nth-child(1) */
+/*body > div#root:nth-child(2) > div > header.site-header.active:nth-child(1) > div.container > div.header-main > div.menu-wrapper:nth-child(7) > div > div:nth-child(2) > div.bm-burger-button > button#react-burger-menu-btn:nth-child(1)*/
+div.bm-burger-button
+{
+  clear: both;
+  /*top: 20%!important;*/
+  /*left: -20%!important;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*margin-right: 1rem!important;*/
+}

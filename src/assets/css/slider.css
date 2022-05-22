@@ -1,0 +1,33 @@
+.ft-slick__dots--custom {
+/*width: 50px;*/
+margin-top: 3rem;
+    /*background: white;*/
+}
+
+
+.custom-dots {
+    background: black;
+    width: 8px;
+    height: 8px;
+    margin: 10px;
+    border-radius: 30px;
+    /*margin: 3px;*/
+}
+
+.slick-prev {
+    left: 3% !important;
+    z-index: 9999;
+    color: black;
+    background: black;
+}
+.slick-next {
+    right: 3% !important;
+    z-index: 9999;
+}
+
+.slick-prev:before, .slick-next:before {
+    color:black !important;
+    background: black!important;
+    z-index: 9999!important;
+    /*left: -40%!important;*/
+}
