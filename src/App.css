@@ -84,3 +84,16 @@ input {
     transform: rotate(360deg);
   }
 }
+
+
+.fc-today{
+  background-color: red !important;
+}
+
+.fc-past{
+  background-color: orange;
+}
+
+.fc-future{
+  background-color: green;
+}
