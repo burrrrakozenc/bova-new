@@ -1,5 +1,4 @@
-import React, {useEffect} from "react";
-import Test from '../assets/images/404-400x240.jpg'
+import React from "react";
 // import "./styles.css";
 
 import FullCalendar from "@fullcalendar/react";
@@ -7,17 +6,9 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 
 // import "@fullcalendar/core/main.css";
 import "@fullcalendar/daygrid/main.css";
-import '../assets/css/calendarBig.css'
 
-export default function Calendar() {
-    const events = [{title: "today's event", date: new Date()}];
-    const styleNew = {
-        backgroundColor: 'black !important'
-    }
-    useEffect(() => {
-        var el = document.querySelector('td[data-date="2022-06-05"]');
-        el.style.backgroundImage = `url(${Test})`
-    },[])
+export default function App() {
+    const events = [{ title: "today's event", date: new Date() }];
 
 
     return (
@@ -25,7 +16,6 @@ export default function Calendar() {
             <FullCalendar
                 defaultView="dayGridMonth"
                 plugins={[dayGridPlugin]}
-                events={events}
                 markingType={'custom'}
                 markedDates={{
                     '2018-03-28': {
@@ -39,10 +29,10 @@ export default function Calendar() {
                             }
                         }
                     },
-                    '2022-06-01': {
+                    '2018-03-29': {
                         customStyles: {
                             container: {
-                                backgroundColor: 'black',
+                                backgroundColor: 'white',
                                 elevation: 2
                             },
                             text: {
