@@ -3,11 +3,30 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+    ApolloProvider,
+    ApolloClient,
+    createHttpLink,
+    InMemoryCache
+} from '@apollo/client';
+
+// 2
+const httpLink = createHttpLink({
+    uri: 'http://localhost:4000'
+});
+
+// 3
+const client = new ApolloClient({
+    link: httpLink,
+    cache: new InMemoryCache()
+});
 
 ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
+        <ApolloProvider client={client}>
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
+        </ApolloProvider>,
     document.getElementById('root')
 );
 
