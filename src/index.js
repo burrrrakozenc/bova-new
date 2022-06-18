@@ -11,22 +11,22 @@ import {
 } from '@apollo/client';
 
 // 2
-const httpLink = createHttpLink({
-    uri: 'http://localhost:4000'
-});
+// const httpLink = createHttpLink({
+//     uri: 'http://localhost:4000'
+// });
 
 // 3
-const client = new ApolloClient({
-    link: httpLink,
-    cache: new InMemoryCache()
-});
+// const client = new ApolloClient({
+//     link: httpLink,
+//     cache: new InMemoryCache()
+// });
 
 ReactDOM.render(
-        <ApolloProvider client={client}>
         <React.StrictMode>
+        {/*// <ApolloProvider client={client}>*/}
             <App />
-        </React.StrictMode>
-        </ApolloProvider>,
+        {/*// </ApolloProvider>,*/}
+        </React.StrictMode>,
     document.getElementById('root')
 );
 
